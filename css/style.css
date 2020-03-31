@@ -107,18 +107,19 @@ nav {
         background-color: #020107;
         position: fixed;
         display: flex;
-        /* background-color: violet; */
+        background-color: violet;
         justify-content: space-around;
         z-index: 1;
+        width: 100%;
     }
 
     .logo {
         font-size: 30px;
+        background-color: yellow;
     }
 
     .nav-links {
         background-color: rgb(0, 0, 0, 0.8);
-
         position: absolute;
         right: -30px;
         height: 92vh;
@@ -131,11 +132,9 @@ nav {
         transition: 1s;
     }
 
-
-
     .burger {
         display: block;
-
+        background-color: aliceblue;
     }
 }
 
@@ -304,8 +303,6 @@ nav {
 
     }
 
-
-
     .colom1 h1 {
         font-size: 35px;
         margin-bottom: -10px;
@@ -320,11 +317,11 @@ nav {
     }
 
     .colom1 p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .colom1 a ion-icon {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .colom2 img {
@@ -334,7 +331,7 @@ nav {
 
     .button1,
     .button2 {
-        width: 80px;
+        width: 70px;
         height: 25px;
         font-size: 12px;
     }
@@ -470,9 +467,8 @@ nav {
 }
 
 @media only screen and (max-width:600px) {
-    .card {
-        width: 45%;
-        margin: 10px;
+    .container-about {
+        display: none;
     }
 
 }
