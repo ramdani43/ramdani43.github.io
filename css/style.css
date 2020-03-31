@@ -477,9 +477,6 @@ footer {
 }
 
 @media only screen and (max-width:720px) {
-    .container-content {
-        display: none;
-    }
 
     .container-about {
         justify-content: center;
@@ -532,6 +529,14 @@ footer {
     .about-content2 .button:hover {
         background-color: #000000;
         color: #ffac41;
+    }
+
+    .container-content .title {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 80%;
     }
 
     footer {
