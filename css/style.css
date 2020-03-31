@@ -107,7 +107,7 @@ nav {
         background-color: #020107;
         position: fixed;
         display: flex;
-        background-color: violet;
+        /* background-color: violet; */
         justify-content: space-around;
         z-index: 1;
         width: 100%;
@@ -115,7 +115,7 @@ nav {
 
     .logo {
         font-size: 30px;
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 
     .nav-links {
@@ -134,7 +134,7 @@ nav {
 
     .burger {
         display: block;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
     }
 }
 
@@ -298,8 +298,8 @@ nav {
 @media only screen and (max-width:720px) {
 
     .container-header {
-        /* align-items: center; */
-        height: 450px;
+        align-items: flex-end;
+        height: 350px;
         /* background-color: aqua; */
     }
 
@@ -312,7 +312,7 @@ nav {
     }
 
     .colom1 h1 {
-        font-size: 30px;
+        font-size: 28px;
         margin-bottom: -10px;
     }
 
@@ -325,11 +325,13 @@ nav {
     }
 
     .colom1 p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .colom1 a ion-icon {
         font-size: 15px;
+        margin-bottom: -10px;
+        padding-right: 5px;
     }
 
     .colom2 img {
@@ -339,9 +341,9 @@ nav {
 
     .button1,
     .button2 {
-        width: 60px;
-        height: 25px;
-        font-size: 10px;
+        width: 50px;
+        height: 20px;
+        font-size: 8px;
     }
 }
 
