@@ -298,13 +298,21 @@ nav {
 @media only screen and (max-width:720px) {
 
     .container-header {
-        /* align-items: flex-end; */
+        /* align-items: center; */
         height: 450px;
+        /* background-color: aqua; */
+    }
 
+    .colom1 {
+        background-color: brown;
+    }
+
+    .colom2 {
+        background-color: chocolate;
     }
 
     .colom1 h1 {
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: -10px;
     }
 
@@ -325,15 +333,15 @@ nav {
     }
 
     .colom2 img {
-        width: 250px;
+        width: 225px;
         margin-bottom: -5px;
     }
 
     .button1,
     .button2 {
-        width: 70px;
+        width: 60px;
         height: 25px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -467,7 +475,9 @@ nav {
 }
 
 @media only screen and (max-width:720px) {
-    .container-about {
+
+    .container-about,
+    .container-content {
         display: none;
     }
 
