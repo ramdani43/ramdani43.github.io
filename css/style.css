@@ -299,25 +299,21 @@ nav {
 
     .container-header {
         align-items: flex-end;
-        height: 350px;
+        justify-content: center;
+        height: 310px;
         /* background-color: aqua; */
     }
 
-    .colom1 {
-        background-color: brown;
-    }
 
-    .colom2 {
-        background-color: chocolate;
-    }
 
     .colom1 h1 {
         font-size: 28px;
-        margin-bottom: -10px;
+        margin-bottom: -30px;
     }
 
     .colom1 h4 {
         font-size: 15px;
+        margin-bottom: -30px;
     }
 
     .colom1 h5 {
@@ -326,6 +322,7 @@ nav {
 
     .colom1 p {
         font-size: 8px;
+        margin-bottom: -10px;
     }
 
     .colom1 a ion-icon {
@@ -335,7 +332,7 @@ nav {
     }
 
     .colom2 img {
-        width: 225px;
+        width: 180px;
         margin-bottom: -5px;
     }
 
