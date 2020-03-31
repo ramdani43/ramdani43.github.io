@@ -295,7 +295,7 @@ nav {
     transform: scale(1.1);
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:720px) {
 
     .container-header {
         /* align-items: flex-end; */
