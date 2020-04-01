@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 
 <head>
     <meta charset="UTF-8">
@@ -15,23 +15,23 @@
     <div class="container-nav">
         <nav>
             <div class="logo">
-                <h4>Portfolio</h4>
+                <h4 class="page-scroll">Portfolio</h4>
             </div>
-            <ul class="nav-links">
+            <ul class=" nav-links">
                 <li>
-                    <div class="nav-link-items"><a href="#">About</a></div>
+                    <div class="nav-link-items">
+                        <a href="#about" class="page-scroll">About</a></div>
                 </li>
                 <li>
-                    <div class="nav-link-items"><a href="#">Resume</a></div>
+                    <div class="nav-link-items"><a href="#resume" class="page-scroll">Resume</a></div>
                 </li>
                 <li>
-                    <div class="nav-link-items"><a href="#">Contact</a></div>
-                </li>
-                <li>
-                    <div class="nav-link-items nav-button"><a href="#">Get Started</a></div>
+                    <div class="nav-link-items nav-button">
+                        <a target="_blank" href="data/cv.pdf" download="Ramdani CV.pdf">Get Started</a>
+                    </div>
                 </li>
             </ul>
-            <div class="burger">
+            <div class=" burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -67,7 +67,7 @@
                     <div class="button1"><a href="">Hire Me</a></div>
                 </li>
                 <li>
-                    <div class="button2"><a href="">Portfolio</a></div>
+                    <div class="button2"><a href="#resume">Portfolio</a></div>
                 </li>
             </ul>
         </div>
@@ -79,7 +79,7 @@
 
 
 
-    <div class="container-about">
+    <div class="container-about" id="about">
         <div class="about-content1">
             <img src="img/dani1.jpg" alt="" width="350" style="margin: auto;">
         </div>
@@ -126,7 +126,7 @@
 
 
 
-    <div class="container-content">
+    <div class="container-content" id="resume">
         <div class="title">
             <h1>Resume</h1>
         </div>
@@ -184,13 +184,14 @@
 
     <footer>
         <p style="margin: auto;"> Copyright &copy; 2020 Ramdani Nugraha </p>
+
+
     </footer>
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 
 </body>
 
