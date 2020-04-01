@@ -47,7 +47,7 @@ nav {
     background-color: #262626;
 }
 
-.logo {
+.logo a {
     color: white;
     font-family: 'Dancing Script', cursive;
     font-size: 45px;
@@ -57,7 +57,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-evenly;
-    width: 45%;
+    width: 30%;
 }
 
 .nav-link-items {
