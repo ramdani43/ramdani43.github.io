@@ -593,6 +593,12 @@ footer {
         width: 80%;
     }
 
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card h2 {}
+
     footer {
         background-color: #262626;
         height: 50px;
