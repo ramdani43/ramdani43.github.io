@@ -448,7 +448,7 @@ nav {
 }
 
 
-.about-content .button:hover {
+.about-content2 .button:hover {
     background-color: #000000;
     color: #ffac41;
 }
@@ -519,6 +519,7 @@ nav {
     color: rgb(161, 161, 161);
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
+    text-align: justify;
 }
 
 

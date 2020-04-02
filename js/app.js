@@ -1,11 +1,13 @@
-$('.page-scroll').on('click', function () {
+$('.page-scroll').click(function (e) {
 
     var tujuan = $(this).attr('href');
     var elemenTujuan = $(tujuan);
 
-    $('body').animate({
-        scrollTop: elemenTujuan.offset().top - 100
-    }, 1000);
+    $('html,body').animate({
+        scrollTop: elemenTujuan.offset().top - 70
+    }, 1000, 'easeInOutExpo');
+
+    e.preventDefault();
 
 });
 
@@ -33,21 +35,30 @@ $(window).on("load", function () {
     $('.colom2').addClass("colom2-show");
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 400) {
+
+if ($('body').width() >= 720) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+            $('.about-content2').addClass("about-show2");
+            $('.about-content1').addClass("about-show1");
+        } else {
+            $('.about-content2').removeClass("about-show2");
+            $('.about-content1').removeClass("about-show1");
+        }
+
+        if ($(this).scrollTop() > 900) {
+            $('.card').each(function (i) {
+                setTimeout(function () {
+                    $('.card').eq(i).addClass("card-show");
+                }, 300 * (i + 1));
+            });
+        }
+    });
+
+} else {
+    $(window).on("load", function () {
         $('.about-content2').addClass("about-show2");
         $('.about-content1').addClass("about-show1");
-    } else {
-        $('.about-content2').removeClass("about-show2");
-        $('.about-content1').removeClass("about-show1");
-    }
-
-
-    if ($(this).scrollTop() > 900) {
-        $('.card').each(function (i) {
-            setTimeout(function () {
-                $('.card').eq(i).addClass("card-show");
-            }, 300 * (i + 1));
-        });
-    }
-});
+        $('.card').addClass("card-show");
+    });
+}
