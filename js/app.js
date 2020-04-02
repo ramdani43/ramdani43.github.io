@@ -19,13 +19,26 @@ $(".burger").click(function () {
 });
 
 // navbar fixed
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('nav').addClass("nav-fixed");
-    } else {
-        $('nav').removeClass("nav-fixed");
-    }
-});
+if ($('body').width() >= 720) {
+
+    // DEKSTOP VERSION
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('nav').addClass("nav-fixed");
+        } else {
+            $('nav').removeClass("nav-fixed");
+        }
+    });
+} else {
+    // MOBILE VERSION
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('nav').addClass("nav-fixed");
+        } else {
+            $('nav').removeClass("nav-fixed");
+        }
+    });
+}
 
 
 // load animation
@@ -37,6 +50,7 @@ $(window).on("load", function () {
 
 
 if ($('body').width() >= 720) {
+    // DEKSTIOP VERDION
     $(window).scroll(function () {
         if ($(this).scrollTop() > 400) {
             $('.about-content2').addClass("about-show2");
@@ -46,7 +60,7 @@ if ($('body').width() >= 720) {
             $('.about-content1').removeClass("about-show1");
         }
 
-        if ($(this).scrollTop() > 900) {
+        if ($(this).scrollTop() > 1000) {
             $('.card').each(function (i) {
                 setTimeout(function () {
                     $('.card').eq(i).addClass("card-show");
@@ -56,6 +70,7 @@ if ($('body').width() >= 720) {
     });
 
 } else {
+    // MOBILE VERSION
     $(window).on("load", function () {
         $('.about-content2').addClass("about-show2");
         $('.about-content1').addClass("about-show1");
